@@ -1,0 +1,5 @@
+package random
+
+func String() {
+
+}
