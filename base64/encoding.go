@@ -1,4 +1,4 @@
-package helpers
+package base64
 
 import (
 	"encoding/base64"
