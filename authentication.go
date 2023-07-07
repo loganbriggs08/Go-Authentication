@@ -4,10 +4,11 @@ import (
 	"fmt"
 
 	"github.com/NotKatsu/Go-Authentication/base64"
+	"github.com/NotKatsu/Go-Authentication/random"
 )
 
-func get_authentication_token(unique_id int) string {
-
+func get_authentication_token(unique_id uint64) {
+	fmt.Println(random.String(25))
 }
 
 func main() {
@@ -15,4 +16,6 @@ func main() {
 	decode_result := base64.Decode(encode_result)
 
 	fmt.Println(encode_result, decode_result)
+
+	get_authentication_token(12345678232323232323)
 }
